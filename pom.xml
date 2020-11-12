@@ -7,7 +7,7 @@
   <packaging>maven-plugin</packaging>
   <name>yaml-json-validator-maven-plugin Maven Plugin</name>
   <description>A Maven Plugin to validate yaml and json document</description>
-  <url>https://github.com/sylvainlaurent/yaml-json-validator-maven-plugin</url>
+  <url>https://github.com/cvakiitho/yaml-json-validator-maven-plugin</url>
 
   <licenses>
     <license>
@@ -24,18 +24,19 @@
   </developers>
 
   <scm>
-    <connection>scm:git:https://github.com/sylvainlaurent/yaml-json-validator-maven-plugin.git</connection>
-    <developerConnection>scm:git:https://github.com/sylvainlaurent/yaml-json-validator-maven-plugin.git</developerConnection>
+    <connection>scm:git:https://github.com/cvakiitho/yaml-json-validator-maven-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/cvakiithot/yaml-json-validator-maven-plugin.git</developerConnection>
     <tag>HEAD</tag>
-    <url>https://github.com/sylvainlaurent/yaml-json-validator-maven-plugin</url>
+    <url>https://github.com/cvakiitho/yaml-json-validator-maven-plugin</url>
   </scm>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
+<distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>GitHub OWNER Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/cvakiitho/yaml-json-validator-maven-plugin</url>
+   </repository>
+</distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
