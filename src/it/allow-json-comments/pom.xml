@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) [j]karef GmbH year .
+  -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -26,15 +30,14 @@
               <goal>validate</goal>
             </goals>
             <configuration>
-              <detectDuplicateKeys>false</detectDuplicateKeys>
               <validationSets>
                 <validationSet>
-                  <jsonSchema>src/main/resources/swagger-schema.json</jsonSchema>
                   <includes>
-                    <include>src/main/resources/swagger-*.yml</include>
+                    <include>src/main/resources/*.json</include>
                   </includes>
                 </validationSet>
               </validationSets>
+              <allowJsonComments>true</allowJsonComments>
             </configuration>
           </execution>
         </executions>
